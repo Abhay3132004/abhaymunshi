@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhay Bipin Munshi — AI & Data Science Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bgCanvas"></canvas>
+<div class="bg-glow"></div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo"><span class="dot"></span>ABM<span class="mono" style="color:var(--dim2)">.SYS</span></div>
+  <nav class="navbar" id="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="header-right">
+    <div class="clock mono">
+      <span id="clockTime">--:--:--</span>
+      <b id="clockLoc">TELEMETRY LINK ACTIVE</b>
+    </div>
+    <button id="menuButton">☰</button>
+  </div>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="hud-tag"><span class="blip"></span>SIGNAL LOCKED · STUDENT · AI &amp; DATA SCIENCE</div>
+    <h1>Abhay Bipin<br><span class="accent">Munshi</span></h1>
+    <p class="role">MSc AI &amp; Data Science · BSc Computer Science</p>
+    <p class="lede">I build practical systems at the intersection of data, code and machine intelligence — currently mapping models, pipelines and interfaces the way a navigator maps a course through open space.</p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn primary">View Projects →</a>
+      <button class="btn secondary viewResumeBtn">View Resume</button>
+    </div>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/abhay-munshi-9b2650271/" target="_blank">LinkedIn ↗</a>
+      <a href="mailto:abhaymunshi007@gmail.com">Email ↗</a>
+    </div>
+  </div>
+
+  <div class="hero-hud">
+    <div class="telemetry panel">
+      <div class="telemetry-head"><span>MISSION TELEMETRY</span><span class="live">● LIVE</span></div>
+      <div class="tele-row"><span class="k">Cursor X / Y</span><span class="v c" id="tCursor">0 / 0</span></div>
+      <div class="tele-row"><span class="k">Particles Tracked</span><span class="v" id="tParticles">0</span></div>
+      <div class="tele-row"><span class="k">Scroll Depth</span><span class="v" id="tScroll">0%</span></div>
+      <div class="tele-row"><span class="k">Session Uptime</span><span class="v mono" id="tUptime">00:00:00</span></div>
+      <div class="tele-row"><span class="k">Focus</span><span class="v m">AI · ML · Data</span></div>
+      <div class="stack-tags">
+        <span>Python</span><span>SQL</span><span>Pandas</span><span>NumPy</span><span>JavaScript</span><span>Power BI</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue"><span>SCROLL</span><span class="line"></span></div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-head reveal"><p class="eyebrow">01 · ABOUT</p><h2>About Me</h2></div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <h3>AI &amp; Data Science Student</h3>
+      <p>MSc AI &amp; Data Science student with a BSc Computer Science background and hands-on exposure to Python, SQL, data analysis, machine learning and web development[cite: 2].</p>
+      <p>Interested in entry-level AI, Data Science, Data Analytics, and software roles. Comfortable working with data, building basic analytical solutions, and developing practical academic projects[cite: 2].</p>
+    </div>
+    <div class="stat-panel panel reveal">
+      <div class="row"><b>MSc</b><span>AI &amp; DATA SCIENCE</span></div>
+      <div class="row"><b>BSc</b><span>COMPUTER SCIENCE</span></div>
+      <div class="row"><b>Focus</b><span>AI / ML / DATA</span></div>
+      <div class="row"><b>Based in</b><span>PUNE, INDIA</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="section-head reveal"><p class="eyebrow">02 · SKILLS</p><h2>Technical Skills</h2></div>
+  <div class="skills-grid">
+    <div class="skill-card panel reveal" data-lvl="88">
+      <div class="skill-idx">01 / PROGRAMMING</div>
+      <h3>Programming</h3>
+      <p>Python, Java, SQL, JavaScript[cite: 2]</p>
+      <div class="bar"><i></i></div>
+    </div>
+    <div class="skill-card panel reveal" data-lvl="82">
+      <div class="skill-idx">02 / DATA &amp; ML</div>
+      <h3>Data &amp; ML</h3>
+      <p>NumPy, Pandas, Matplotlib, Machine Learning fundamentals, Data Analysis[cite: 2]</p>
+      <div class="bar"><i></i></div>
+    </div>
+    <div class="skill-card panel reveal" data-lvl="76">
+      <div class="skill-idx">03 / MACHINE LEARNING</div>
+      <h3>Machine Learning</h3>
+      <p>Classification, regression, KNN, decision trees, random forests, SVM[cite: 2]</p>
+      <div class="bar"><i></i></div>
+    </div>
+    <div class="skill-card panel reveal" data-lvl="70">
+      <div class="skill-idx">04 / DATABASE &amp; BI</div>
+      <h3>Database &amp; BI</h3>
+      <p>MySQL, Power BI[cite: 2]</p>
+      <div class="bar"><i></i></div>
+    </div>
+    <div class="skill-card panel reveal" data-lvl="74">
+      <div class="skill-idx">05 / WEB DEVELOPMENT</div>
+      <h3>Web Development</h3>
+      <p>HTML, CSS, JavaScript, PHP[cite: 2]</p>
+      <div class="bar"><i></i></div>
+    </div>
+    <div class="skill-card panel reveal" data-lvl="80">
+      <div class="skill-idx">06 / TOOLS</div>
+      <h3>Tools</h3>
+      <p>Git, GitHub, VS Code[cite: 2]</p>
+      <div class="bar"><i></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="section-head reveal"><p class="eyebrow">03 · PROJECTS</p><h2>My Projects</h2></div>
+  <div class="projects-grid">
+    <div class="project-card panel reveal">
+      <div class="pn">01</div>
+      <h3>Laundry Master</h3>
+      <p>Developed a web-based laundry management project with a structured frontend and database-backed functionality using a local XAMPP environment[cite: 2].</p>
+      <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span></div>
+    </div>
+    <div class="project-card panel reveal">
+      <div class="pn">02</div>
+      <h3>Student Management System</h3>
+      <p>Designed an academic management application concept for storing and managing student-related information using object-oriented principles[cite: 2].</p>
+      <div class="tags"><span>Java</span><span>SQL</span></div>
+    </div>
+    <div class="project-card panel coming reveal">
+      <div class="pn">03</div>
+      <h3>AI / Data Science Project</h3>
+      <p>New AI and Data Science projects will be added here as they are completed.</p>
+      <div class="coming-text">COMING SOON</div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section" id="education">
+  <div class="section-head reveal"><p class="eyebrow">04 · EDUCATION</p><h2>Education</h2></div>
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span>CURRENT[cite: 2]</span>
+        <h3>MSc Artificial Intelligence &amp; Data Science[cite: 2]</h3>
+        <p>Indira University, Pune, Maharashtra[cite: 2]</p>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span>COMPLETED</span>
+        <h3>BSc Computer Science[cite: 2]</h3>
+        <p>Savitribai Phule Pune University (SPPU)[cite: 2]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWLEDGE -->
+<section class="section" id="knowledge">
+  <div class="section-head reveal"><p class="eyebrow">05 · KNOWLEDGE</p><h2>Academic Knowledge</h2></div>
+  <div class="knowledge-grid">
+    <div class="panel reveal">
+      <h3>Machine Learning</h3>
+      <p>Classification, regression, KNN, decision trees, random forests, SVM, training/testing data, and overfitting[cite: 2].</p>
+    </div>
+    <div class="panel reveal">
+      <h3>Data Analysis</h3>
+      <p>Data cleaning, missing values, descriptive statistics, visualization, correlation, and basic statistical testing[cite: 2].</p>
+    </div>
+    <div class="panel reveal">
+      <h3>Programming</h3>
+      <p>Object-oriented programming, SQL queries, data structures, and basic software development practices[cite: 2].</p>
+    </div>
+  </div>
+</section>
+
+<!-- INTERESTS -->
+<section class="section" id="interests">
+  <div class="section-head reveal"><p class="eyebrow">06 · INTERESTS</p><h2>Career Interests</h2></div>
+  <div class="interest-list reveal">
+    <span>Artificial Intelligence[cite: 2]</span>
+    <span>Data Science[cite: 2]</span>
+    <span>Machine Learning[cite: 2]</span>
+    <span>Data Analytics[cite: 2]</span>
+    <span>Python Development[cite: 2]</span>
+    <span>Software Development[cite: 2]</span>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section class="section" id="resume">
+  <div class="resume-box panel reveal">
+    <p class="tag">MY RESUME</p>
+    <h2>Want to know more about me?</h2>
+    <p class="sub">View my complete professional summary and qualifications directly, or download the formal record.</p>
+    <div class="resume-buttons">
+      <button class="btn primary viewResumeBtn">View Resume</button>
+      <a href="resume.pdf" download="Abhay_Munshi_Resume.pdf" class="btn secondary">Download Resume PDF</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="section-head reveal"><p class="eyebrow">07 · CONTACT</p><h2>Let's Connect</h2></div>
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <h3>Have a project or opportunity?</h3>
+      <p>Feel free to contact me for projects, collaboration or professional opportunities.</p>
+      <div class="contact-item"><span>EMAIL</span><a href="mailto:abhaymunshi007@gmail.com">abhaymunshi007@gmail.com</a></div>
+      <div class="contact-item"><span>PHONE</span><p>8550920757</p></div>
+      <div class="contact-item"><span>LINKEDIN</span><a href="https://www.linkedin.com/in/abhay-munshi-9b2650271/" target="_blank">LinkedIn Profile</a></div>
+    </div>
+    <form id="contactForm" class="contact-form panel reveal">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn primary">Send Message</button>
+      <p id="formMessage"></p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Abhay Bipin Munshi</p>
+  <p class="mono">AI &amp; DATA SCIENCE PORTFOLIO</p>
+</footer>
+
+<!-- RESUME MODAL POPUP -->
+<div class="resume-modal-overlay" id="resumeModal">
+  <div class="resume-modal">
+    <button class="resume-modal-close" id="closeResumeModal">✕</button>
+    <div class="resume-doc-header">
+      <h2>Abhay Bipin Munshi</h2>
+      <p>Pune, Maharashtra | 8550920757 | abhaymunshi007@gmail.com | LinkedIn: linkedin.com/in/abhay-munshi-9b2650271[cite: 2]</p>
+    </div>
+    
+    <div class="resume-section-title">Professional Summary</div>
+    <p class="resume-body-text">MSc Artificial Intelligence &amp; Data Science student with a BSc Computer Science background and hands-on exposure to Python, SQL, data analysis, machine learning, and web development. Interested in entry-level AI, Data Science, Data Analytics, and software roles. Comfortable working with data, building basic analytical solutions, and developing practical academic projects[cite: 2].</p>
+
+    <div class="resume-section-title">Education</div>
+    <p class="resume-body-text"><strong>MSc Artificial Intelligence &amp; Data Science</strong> (Current) — Indira University, Pune, Maharashtra[cite: 2]</p>
+    <p class="resume-body-text" style="margin-top:6px;"><strong>BSc Computer Science</strong> — Savitribai Phule Pune University (SPPU)[cite: 2]</p>
+
+    <div class="resume-section-title">Technical Skills</div>
+    <ul class="resume-list">
+      <li><strong>Programming:</strong> Python, Java, SQL, JavaScript[cite: 2]</li>
+      <li><strong>Data &amp; ML:</strong> NumPy, Pandas, Matplotlib, Machine Learning fundamentals, Data Analysis[cite: 2]</li>
+      <li><strong>Database &amp; BI:</strong> MySQL, Power BI[cite: 2]</li>
+      <li><strong>Web Development:</strong> HTML, CSS, JavaScript, PHP[cite: 2]</li>
+      <li><strong>Tools:</strong> Git, GitHub, VS Code[cite: 2]</li>
+    </ul>
+
+    <div class="resume-section-title">Projects</div>
+    <p class="resume-body-text"><strong>Laundry Master</strong> (HTML, CSS, JavaScript, PHP, MySQL)<br>
+    Developed a web-based laundry management project with a structured frontend and database-backed functionality, working across user interface design, server-side PHP logic, MySQL data storage, and local XAMPP environments[cite: 2].</p>
+    <p class="resume-body-text" style="margin-top:10px;"><strong>Student Management System</strong> (Java, SQL)<br>
+    Designed an academic management application concept for storing and managing student-related information using programming, database, and object-oriented concepts[cite: 2].</p>
+
+    <div class="resume-section-title">Academic &amp; Technical Knowledge</div>
+    <p class="resume-body-text"><strong>Machine Learning:</strong> Classification, regression, KNN, decision trees, random forests, SVM, training/testing data, and overfitting[cite: 2].<br>
+    <strong>Data Analysis:</strong> Data cleaning, missing values, descriptive statistics, visualization, correlation, and basic statistical testing[cite: 2].<br>
+    <strong>Programming:</strong> Object-oriented programming, SQL queries, data structures, and basic software development practices[cite: 2].</p>
+
+    <div class="resume-section-title">Career Interests</div>
+    <p class="resume-body-text">Artificial Intelligence, Data Science, Machine Learning, Data Analytics, Python Development, Software Development[cite: 2].</p>
+  </div>
+</div>
+
+<button id="backToTop">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
